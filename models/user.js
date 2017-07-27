@@ -6,15 +6,14 @@ module.exports = function(sequelize, DataTypes) {
     email: DataTypes.STRING,
     username: DataTypes.STRING,
     password: DataTypes.STRING,
+    gender: DataTypes.STRING,
     active: DataTypes.BOOLEAN,
     deleted: DataTypes.BOOLEAN,
     id_detail_user: DataTypes.INTEGER
-  }, {
-    classMethods: {
-      associate: function(models) {
-        // associations can be defined here
-      }
-    }
   });
+
+  // User.associate = (models)=>{
+  //   User.belongsTo(models.DetailUser, {foreignKey: 'id_detail_user'})
+  // }
   return User;
 };

@@ -28,6 +28,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
+      gender: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
       active: {
         type: Sequelize.BOOLEAN
       },
