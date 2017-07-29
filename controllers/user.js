@@ -2,6 +2,7 @@ const models = require('../models');
 const crypto = require('crypto');
 require('dotenv').config();
 
+const { encrypt } = require('../helpers/encrypt-decrypt')
 module.exports = {
 	getAllUsers : (req, res) => {
 		models.User.findAll()
@@ -72,12 +73,7 @@ module.exports = {
       success: false,
       message: ''
 		}
-		function encrypt(text){
-		  var cipher = crypto.createCipher(process.env.ALGORITHM,process.env.KEY)
-		  var crypted = cipher.update(text,'utf8','hex')
-		  crypted += cipher.final('hex');
-		  return crypted;
-		}
+
 		models.User.create({
 			first_name: req.body.first_name,
       last_name: req.body.last_name,
