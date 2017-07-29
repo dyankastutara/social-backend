@@ -14,7 +14,6 @@ describe('User Test', ()=>{
 		})
 	})
 })
-
 // var crypto = require('crypto'),
 //     algorithm = 'aes-256-ctr',
 //     password = 'd6F3Efeq';
