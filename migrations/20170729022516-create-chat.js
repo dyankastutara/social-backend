@@ -8,14 +8,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id_friend: {
+      friend_id: {
+        type: Sequelize.INTEGER
+      },
+      user_id:{
         type: Sequelize.INTEGER
       },
       text_chat: {
         type: Sequelize.TEXT
-      },
-      id_user: {
-        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

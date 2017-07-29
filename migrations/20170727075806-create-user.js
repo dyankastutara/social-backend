@@ -38,7 +38,7 @@ module.exports = {
       deleted: {
         type: Sequelize.BOOLEAN
       },
-      id_detail_user: {
+      detail_user_id: {
         type: Sequelize.INTEGER
       },
       createdAt: {

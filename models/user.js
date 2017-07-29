@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     gender: DataTypes.STRING,
     active: DataTypes.BOOLEAN,
     deleted: DataTypes.BOOLEAN,
-    id_detail_user: DataTypes.INTEGER
+    detail_user_id: DataTypes.INTEGER
   });
 
   // User.associate = (models)=>{
